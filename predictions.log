@@ -1,0 +1,161 @@
+2025-05-05 19:37:25,994 - INFO - Starting FastAPI server...
+2025-05-05 23:00:59,085 - INFO - Starting FastAPI server...
+2025-05-06 01:30:08,181 - INFO - Starting FastAPI server...
+2025-05-06 19:17:09,944 - INFO - Starting FastAPI server...
+2025-05-06 19:35:29,641 - INFO - New prediction request received at 2025-05-06 19:35:29.641597
+2025-05-06 19:35:29,642 - INFO - Request data: {"country":"Россия","crop":"Рис","temperature":-2.79,"precipitation":495.1}
+2025-05-06 19:35:29,653 - ERROR - Prediction failed for Россия/Рис: y contains previously unseen labels: 'Рис'
+2025-05-06 19:39:01,211 - INFO - Starting FastAPI server...
+2025-05-06 19:39:07,612 - INFO - New prediction request received at 2025-05-06 19:39:07.612410
+2025-05-06 19:39:07,612 - INFO - Request data: {"country":"Россия","crop":"Рис","temperature":-2.79,"precipitation":495.1}
+2025-05-06 19:39:07,612 - ERROR - Prediction failed for Россия/Рис: 400: Культура 'Рис' не поддерживается. Доступные культуры: ['Гречиха', 'Картофель', 'Кукуруза', 'Пшеница', 'Рапс', 'Рожь', 'Сахарная свекла', 'Ячмень']
+2025-05-06 19:41:19,929 - INFO - New prediction request received at 2025-05-06 19:41:19.929271
+2025-05-06 19:41:19,929 - INFO - Request data: {"country":"Россия","crop":"Пшеница","temperature":-2.79,"precipitation":495.1}
+2025-05-06 19:41:20,220 - ERROR - Prediction failed for Россия/Пшеница: Object of type int64 is not JSON serializable
+2025-05-06 20:02:36,645 - INFO - Starting FastAPI server...
+2025-05-06 20:02:56,223 - INFO - New prediction request received at 2025-05-06 20:02:56.223556
+2025-05-06 20:02:56,224 - INFO - Request data: {"country":"Россия","crop":"Картофель","temperature":-2.73,"precipitation":496.19}
+2025-05-06 20:02:56,326 - ERROR - Prediction failed for Россия/Картофель: Object of type int64 is not JSON serializable
+2025-05-06 20:08:02,962 - INFO - Starting FastAPI server...
+2025-05-06 22:28:27,757 - INFO - Starting FastAPI server...
+2025-05-06 22:30:08,334 - INFO - New prediction request received at 2025-05-06 22:30:08.334013
+2025-05-06 22:30:08,335 - INFO - Request data: {'country': 'Россия', 'crop': 'Пшеница', 'temperature': -2.62, 'precipitation': 498.36}
+2025-05-06 22:30:08,616 - INFO - Prediction completed: {"timestamp": "2025-05-06T22:30:08.616852", "request": {"country": "Россия", "crop": "Пшеница", "temperature": -2.62, "precipitation": 498.36}, "result": {"predicted_yield": 2806.104248046875}}
+2025-05-06 22:30:08,616 - ERROR - Prediction failed for Россия/Пшеница: JSONResponse.__init__() got an unexpected keyword argument 'encoder'
+Traceback (most recent call last):
+  File "C:\Папка Яна Сергеевича\БГУИР\3 курс\КП СТОЭИ\Код\NeuralNetwork2.0\.venv\restServer.py", line 125, in predict_yield
+    return JSONResponse(content=result, encoder=NumpyEncoder)  # Использование кастомного энкодера
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: JSONResponse.__init__() got an unexpected keyword argument 'encoder'
+2025-05-06 22:42:03,984 - INFO - Starting FastAPI server...
+2025-05-06 22:43:22,508 - INFO - New prediction request received at 2025-05-06 22:43:22.508932
+2025-05-06 22:43:22,509 - INFO - Request data: {'country': 'Россия', 'crop': 'Пшеница', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-06 22:43:22,623 - INFO - Prediction completed: {"timestamp": "2025-05-06T22:43:22.623281", "request": {"country": "Россия", "crop": "Пшеница", "temperature": -2.73, "precipitation": 496.19}, "result": {"predicted_yield": 2806.109619140625}}
+2025-05-06 23:24:06,000 - INFO - New prediction request received at 2025-05-06 23:24:06.000142
+2025-05-06 23:24:06,000 - INFO - Request data: {'country': 'Россия', 'crop': 'Кукуруза', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-06 23:24:06,061 - INFO - Prediction completed: {"timestamp": "2025-05-06T23:24:06.061620", "request": {"country": "Россия", "crop": "Кукуруза", "temperature": -2.73, "precipitation": 496.19}, "result": {"predicted_yield": 4287.0986328125}}
+2025-05-06 23:33:00,784 - INFO - New prediction request received at 2025-05-06 23:33:00.784435
+2025-05-06 23:33:00,784 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Ячмень', 'temperature': 8.51, 'precipitation': 676.31}
+2025-05-06 23:33:00,846 - INFO - Prediction completed: {"timestamp": "2025-05-06T23:33:00.846732", "request": {"country": "Беларусь", "crop": "Ячмень", "temperature": 8.51, "precipitation": 676.31}, "result": {"predicted_yield": 2836.788330078125}}
+2025-05-06 23:49:43,439 - INFO - New prediction request received at 2025-05-06 23:49:43.439577
+2025-05-06 23:49:43,439 - INFO - Request data: {'country': 'Словакия', 'crop': 'Пшеница', 'temperature': 10.24, 'precipitation': 812.74}
+2025-05-06 23:49:43,501 - INFO - Prediction completed: {"timestamp": "2025-05-06T23:49:43.501574", "request": {"country": "Словакия", "crop": "Пшеница", "temperature": 10.24, "precipitation": 812.74}, "result": {"predicted_yield": 2832.2197265625}}
+2025-05-07 00:00:01,873 - INFO - New prediction request received at 2025-05-07 00:00:01.872942
+2025-05-07 00:00:01,873 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Пшеница', 'temperature': 8.57, 'precipitation': 677.75}
+2025-05-07 00:00:01,934 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:00:01.934952", "request": {"country": "Беларусь", "crop": "Пшеница", "temperature": 8.57, "precipitation": 677.75}, "result": {"predicted_yield": 2901.00439453125}}
+2025-05-07 00:04:03,036 - INFO - Starting FastAPI server...
+2025-05-07 00:10:44,124 - INFO - New prediction request received at 2025-05-07 00:10:44.124101
+2025-05-07 00:10:44,125 - INFO - Request data: {'country': 'Россия', 'crop': 'Кукуруза', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-07 00:10:44,241 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:10:44.240906", "request": {"country": "Россия", "crop": "Кукуруза", "temperature": -2.73, "precipitation": 496.19}, "result": {"predicted_yield": 4287.0986328125}}
+2025-05-07 00:10:44,241 - ERROR - Prediction failed for Россия/Кукуруза: jsonable_encoder() got an unexpected keyword argument 'content'
+2025-05-07 00:11:34,205 - INFO - Starting FastAPI server...
+2025-05-07 00:11:41,429 - INFO - New prediction request received at 2025-05-07 00:11:41.429939
+2025-05-07 00:11:41,430 - INFO - Request data: {'country': 'Россия', 'crop': 'Кукуруза', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-07 00:11:41,551 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:11:41.551741", "request": {"country": "Россия", "crop": "Кукуруза", "temperature": -2.73, "precipitation": 496.19}, "result": {"predicted_yield": 4287.0986328125}}
+2025-05-07 00:11:41,551 - ERROR - Prediction failed for Россия/Кукуруза: jsonable_encoder() got an unexpected keyword argument 'content'
+2025-05-07 00:11:42,526 - INFO - New prediction request received at 2025-05-07 00:11:42.526024
+2025-05-07 00:11:42,526 - INFO - Request data: {'country': 'Россия', 'crop': 'Кукуруза', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-07 00:11:42,591 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:11:42.591022", "request": {"country": "Россия", "crop": "Кукуруза", "temperature": -2.73, "precipitation": 496.19}, "result": {"predicted_yield": 4287.0986328125}}
+2025-05-07 00:11:42,591 - ERROR - Prediction failed for Россия/Кукуруза: jsonable_encoder() got an unexpected keyword argument 'content'
+2025-05-07 00:12:03,070 - INFO - Starting FastAPI server...
+2025-05-07 00:16:01,961 - INFO - Starting FastAPI server...
+2025-05-07 00:16:22,326 - INFO - New prediction request received at 2025-05-07 00:16:22.326695
+2025-05-07 00:16:22,327 - INFO - Request data: {'country': 'Россия', 'crop': 'Картофель', 'temperature': -2.62, 'precipitation': 498.36}
+2025-05-07 00:16:22,436 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:16:22.436626", "request": {"country": "Россия", "crop": "Картофель", "temperature": -2.62, "precipitation": 498.36}, "result": {"predicted_yield": 16744.873046875}}
+2025-05-07 00:21:33,299 - INFO - New prediction request received at 2025-05-07 00:21:33.299228
+2025-05-07 00:21:33,300 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Кукуруза', 'temperature': 8.68, 'precipitation': 680.63}
+2025-05-07 00:21:33,364 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:21:33.364912", "request": {"country": "Беларусь", "crop": "Кукуруза", "temperature": 8.68, "precipitation": 680.63}, "result": {"predicted_yield": 4463.73388671875}}
+2025-05-07 00:26:29,395 - INFO - New prediction request received at 2025-05-07 00:26:29.394922
+2025-05-07 00:26:29,395 - INFO - Request data: {'country': 'Польша', 'crop': 'Кукуруза', 'temperature': 9.96, 'precipitation': 626.64}
+2025-05-07 00:26:29,459 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:26:29.459046", "request": {"country": "Польша", "crop": "Кукуруза", "temperature": 9.96, "precipitation": 626.64}, "result": {"predicted_yield": 4440.9765625}}
+2025-05-07 00:37:12,014 - INFO - Starting FastAPI server...
+2025-05-07 00:38:32,677 - INFO - New prediction request received at 2025-05-07 00:38:32.677573
+2025-05-07 00:38:32,677 - INFO - Request data: {'country': 'Россия', 'crop': 'Рожь', 'temperature': -2.73, 'precipitation': 496.19}
+2025-05-07 00:38:32,789 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:38:32.789464", "request": {"country": "Россия", "crop": "Рожь", "temperature": -2.73, "precipitation": 496.19}, "result": {"predictedYield": 2728.250732421875}}
+2025-05-07 00:40:35,549 - INFO - New prediction request received at 2025-05-07 00:40:35.549005
+2025-05-07 00:40:35,549 - INFO - Request data: {'country': 'Зимбабве', 'crop': 'Картофель', 'temperature': 22.09, 'precipitation': 701.8}
+2025-05-07 00:40:35,613 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:40:35.613998", "request": {"country": "Зимбабве", "crop": "Картофель", "temperature": 22.09, "precipitation": 701.8}, "result": {"predictedYield": 16726.529296875}}
+2025-05-07 00:40:59,208 - INFO - New prediction request received at 2025-05-07 00:40:59.208597
+2025-05-07 00:40:59,208 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Картофель', 'temperature': 8.63, 'precipitation': 679.19}
+2025-05-07 00:40:59,269 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:40:59.269028", "request": {"country": "Беларусь", "crop": "Картофель", "temperature": 8.63, "precipitation": 679.19}, "result": {"predictedYield": 17306.876953125}}
+2025-05-07 00:41:11,256 - INFO - New prediction request received at 2025-05-07 00:41:11.256045
+2025-05-07 00:41:11,256 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Картофель', 'temperature': 8.57, 'precipitation': 677.75}
+2025-05-07 00:41:11,321 - INFO - Prediction completed: {"timestamp": "2025-05-07T00:41:11.321408", "request": {"country": "Беларусь", "crop": "Картофель", "temperature": 8.57, "precipitation": 677.75}, "result": {"predictedYield": 17306.828125}}
+2025-05-07 13:41:46,680 - INFO - Starting FastAPI server...
+2025-05-07 13:52:07,578 - INFO - New prediction request received at 2025-05-07 13:52:07.577592
+2025-05-07 13:52:07,578 - INFO - Request data: {'country': 'Россия', 'crop': 'Рис', 'temperature': -2.79, 'precipitation': 495.1}
+2025-05-07 13:52:07,579 - ERROR - Prediction failed for Россия/Рис: 400: Unsupported crop 'Рис'. Available: ['Гречиха', 'Картофель', 'Кукуруза', 'Пшеница', 'Рапс', 'Рожь', 'Сахарная свекла', 'Ячмень']
+2025-05-07 13:52:26,638 - INFO - New prediction request received at 2025-05-07 13:52:26.638538
+2025-05-07 13:52:26,638 - INFO - Request data: {'country': 'Россия', 'crop': 'Ячмень', 'temperature': -2.79, 'precipitation': 495.1}
+2025-05-07 13:52:26,922 - INFO - Prediction completed: {"timestamp": "2025-05-07T13:52:26.921296", "request": {"country": "Россия", "crop": "Ячмень", "temperature": -2.79, "precipitation": 495.1}, "result": {"predictedYield": 2746.77294921875}}
+2025-05-07 13:52:54,552 - INFO - New prediction request received at 2025-05-07 13:52:54.552704
+2025-05-07 13:52:54,553 - INFO - Request data: {'country': 'Россия', 'crop': 'Ячмень', 'temperature': -2.56, 'precipitation': 499.44}
+2025-05-07 13:52:54,615 - INFO - Prediction completed: {"timestamp": "2025-05-07T13:52:54.615705", "request": {"country": "Россия", "crop": "Ячмень", "temperature": -2.56, "precipitation": 499.44}, "result": {"predictedYield": 2747.52685546875}}
+2025-05-07 13:53:04,569 - INFO - New prediction request received at 2025-05-07 13:53:04.569490
+2025-05-07 13:53:04,569 - INFO - Request data: {'country': 'Россия', 'crop': 'Ячмень', 'temperature': -2.79, 'precipitation': 495.1}
+2025-05-07 13:53:04,644 - INFO - Prediction completed: {"timestamp": "2025-05-07T13:53:04.644486", "request": {"country": "Россия", "crop": "Ячмень", "temperature": -2.79, "precipitation": 495.1}, "result": {"predictedYield": 2746.77294921875}}
+2025-05-07 13:53:23,906 - INFO - New prediction request received at 2025-05-07 13:53:23.906245
+2025-05-07 13:53:23,907 - INFO - Request data: {'country': 'Россия', 'crop': 'Ячмень', 'temperature': -2.67, 'precipitation': 497.27}
+2025-05-07 13:53:23,974 - INFO - Prediction completed: {"timestamp": "2025-05-07T13:53:23.974050", "request": {"country": "Россия", "crop": "Ячмень", "temperature": -2.67, "precipitation": 497.27}, "result": {"predictedYield": 2747.167236328125}}
+2025-05-07 14:33:57,958 - INFO - Starting FastAPI server...
+2025-05-07 14:37:01,321 - INFO - New prediction request received at 2025-05-07 14:37:01.321220
+2025-05-07 14:37:01,322 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Рожь', 'temperature': 8.63, 'precipitation': 679.19}
+2025-05-07 14:37:01,479 - INFO - Prediction completed: {"timestamp": "2025-05-07T14:37:01.479222", "request": {"country": "Беларусь", "crop": "Рожь", "temperature": 8.63, "precipitation": 679.19}, "result": {"predictedYield": 2487.8955078125}}
+2025-05-07 14:59:01,492 - INFO - New prediction request received at 2025-05-07 14:59:01.492303
+2025-05-07 14:59:01,492 - INFO - Request data: {'country': 'Россия', 'crop': 'Кукуруза', 'temperature': -2.67, 'precipitation': 497.27}
+2025-05-07 14:59:01,577 - INFO - Prediction completed: {"timestamp": "2025-05-07T14:59:01.577306", "request": {"country": "Россия", "crop": "Кукуруза", "temperature": -2.67, "precipitation": 497.27}, "result": {"predictedYield": 4287.52001953125}}
+2025-05-07 19:50:24,489 - INFO - Starting FastAPI server...
+2025-05-07 22:24:18,075 - INFO - New prediction request received at 2025-05-07 22:24:18.075702
+2025-05-07 22:24:18,076 - INFO - Request data: {'country': 'Польша', 'crop': 'Кукуруза', 'temperature': 9.9, 'precipitation': 625.89}
+2025-05-07 22:24:18,412 - INFO - Prediction completed: {"timestamp": "2025-05-07T22:24:18.412411", "request": {"country": "Польша", "crop": "Кукуруза", "temperature": 9.9, "precipitation": 625.89}, "result": {"predictedYield": 4440.369140625}}
+2025-05-07 22:29:49,936 - INFO - New prediction request received at 2025-05-07 22:29:49.936220
+2025-05-07 22:29:49,937 - INFO - Request data: {'country': 'Германия', 'crop': 'Рожь', 'temperature': 10.6, 'precipitation': 703.97}
+2025-05-07 22:29:50,010 - INFO - Prediction completed: {"timestamp": "2025-05-07T22:29:50.010301", "request": {"country": "Германия", "crop": "Рожь", "temperature": 10.6, "precipitation": 703.97}, "result": {"predictedYield": 2324.00341796875}}
+2025-05-10 09:51:28,506 - INFO - Starting FastAPI server...
+2025-05-10 22:35:43,329 - INFO - Starting FastAPI server...
+2025-05-10 22:37:34,448 - INFO - New prediction request received at 2025-05-10 22:37:34.448808
+2025-05-10 22:37:34,448 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Рапс', 'temperature': 8.45, 'precipitation': 674.87}
+2025-05-10 22:37:34,738 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:37:34.738940", "request": {"country": "Беларусь", "crop": "Рапс", "temperature": 8.45, "precipitation": 674.87}, "result": {"predictedYield": 1709.75830078125}}
+2025-05-10 22:38:32,329 - INFO - New prediction request received at 2025-05-10 22:38:32.329473
+2025-05-10 22:38:32,329 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Рапс', 'temperature': 8.51, 'precipitation': 676.31}
+2025-05-10 22:38:32,390 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:38:32.390627", "request": {"country": "Беларусь", "crop": "Рапс", "temperature": 8.51, "precipitation": 676.31}, "result": {"predictedYield": 1710.067626953125}}
+2025-05-10 22:38:50,045 - INFO - New prediction request received at 2025-05-10 22:38:50.045377
+2025-05-10 22:38:50,046 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Пшеница', 'temperature': 8.51, 'precipitation': 676.31}
+2025-05-10 22:38:50,107 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:38:50.107941", "request": {"country": "Беларусь", "crop": "Пшеница", "temperature": 8.51, "precipitation": 676.31}, "result": {"predictedYield": 2900.984619140625}}
+2025-05-10 22:38:59,755 - INFO - New prediction request received at 2025-05-10 22:38:59.755727
+2025-05-10 22:38:59,755 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Рапс', 'temperature': 8.51, 'precipitation': 676.31}
+2025-05-10 22:38:59,816 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:38:59.816735", "request": {"country": "Беларусь", "crop": "Рапс", "temperature": 8.51, "precipitation": 676.31}, "result": {"predictedYield": 1710.067626953125}}
+2025-05-10 22:39:41,921 - INFO - New prediction request received at 2025-05-10 22:39:41.921578
+2025-05-10 22:39:41,921 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Пшеница', 'temperature': 8.45, 'precipitation': 674.87}
+2025-05-10 22:39:41,981 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:39:41.981289", "request": {"country": "Беларусь", "crop": "Пшеница", "temperature": 8.45, "precipitation": 674.87}, "result": {"predictedYield": 2900.965576171875}}
+2025-05-10 22:40:34,297 - INFO - New prediction request received at 2025-05-10 22:40:34.297861
+2025-05-10 22:40:34,298 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Рапс', 'temperature': 8.45, 'precipitation': 674.87}
+2025-05-10 22:40:34,355 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:40:34.355709", "request": {"country": "Беларусь", "crop": "Рапс", "temperature": 8.45, "precipitation": 674.87}, "result": {"predictedYield": 1709.75830078125}}
+2025-05-10 22:43:30,588 - INFO - New prediction request received at 2025-05-10 22:43:30.588769
+2025-05-10 22:43:30,588 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Кукуруза', 'temperature': 8.45, 'precipitation': 674.87}
+2025-05-10 22:43:30,648 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:43:30.648747", "request": {"country": "Беларусь", "crop": "Кукуруза", "temperature": 8.45, "precipitation": 674.87}, "result": {"predictedYield": 4463.291015625}}
+2025-05-10 22:43:51,755 - INFO - New prediction request received at 2025-05-10 22:43:51.755953
+2025-05-10 22:43:51,755 - INFO - Request data: {'country': 'Беларусь', 'crop': 'Сахарная свекла', 'temperature': 8.45, 'precipitation': 674.87}
+2025-05-10 22:43:51,814 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:43:51.814384", "request": {"country": "Беларусь", "crop": "Сахарная свекла", "temperature": 8.45, "precipitation": 674.87}, "result": {"predictedYield": 35658.69140625}}
+2025-05-10 22:44:55,960 - INFO - New prediction request received at 2025-05-10 22:44:55.960690
+2025-05-10 22:44:55,960 - INFO - Request data: {'country': 'Германия', 'crop': 'Сахарная свекла', 'temperature': 10.46, 'precipitation': 708.41}
+2025-05-10 22:44:56,025 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:44:56.025011", "request": {"country": "Германия", "crop": "Сахарная свекла", "temperature": 10.46, "precipitation": 708.41}, "result": {"predictedYield": 35945.51953125}}
+2025-05-10 22:47:11,827 - INFO - New prediction request received at 2025-05-10 22:47:11.827213
+2025-05-10 22:47:11,827 - INFO - Request data: {'country': 'Германия', 'crop': 'Пшеница', 'temperature': 10.46, 'precipitation': 708.41}
+2025-05-10 22:47:11,887 - INFO - Prediction completed: {"timestamp": "2025-05-10T22:47:11.886111", "request": {"country": "Германия", "crop": "Пшеница", "temperature": 10.46, "precipitation": 708.41}, "result": {"predictedYield": 2882.953369140625}}
+2025-09-12 19:19:14,073 - INFO - Starting FastAPI server...
+2025-09-12 19:19:27,459 - INFO - New prediction request received at 2025-09-12 19:19:27.459485
+2025-09-12 19:19:27,460 - INFO - Request data: {'country': 'Венгрия', 'crop': 'Пшеница', 'temperature': 12.63, 'precipitation': 641.43}
+2025-09-12 19:19:27,729 - INFO - Prediction completed: {"timestamp": "2025-09-12T19:19:27.729755", "request": {"country": "Венгрия", "crop": "Пшеница", "temperature": 12.63, "precipitation": 641.43}, "result": {"predictedYield": 2969.57861328125}}
+2025-09-12 19:19:54,324 - INFO - New prediction request received at 2025-09-12 19:19:54.323240
+2025-09-12 19:19:54,324 - INFO - Request data: {'country': 'Венгрия', 'crop': 'Пшеница', 'temperature': 12.8, 'precipitation': 646.14}
+2025-09-12 19:19:54,377 - INFO - Prediction completed: {"timestamp": "2025-09-12T19:19:54.377822", "request": {"country": "Венгрия", "crop": "Пшеница", "temperature": 12.8, "precipitation": 646.14}, "result": {"predictedYield": 2969.966796875}}
+2025-09-12 19:34:02,950 - INFO - New prediction request received at 2025-09-12 19:34:02.950638
+2025-09-12 19:34:02,950 - INFO - Request data: {'country': 'Россия', 'crop': 'Соя', 'temperature': -2.79, 'precipitation': 495.1}
+2025-09-12 19:34:02,951 - ERROR - Prediction failed for Россия/Соя: 400: Unsupported crop 'Соя'. Available: ['Гречиха', 'Картофель', 'Кукуруза', 'Пшеница', 'Рапс', 'Рожь', 'Сахарная свекла', 'Ячмень']
+2025-09-12 19:34:09,297 - INFO - New prediction request received at 2025-09-12 19:34:09.297838
+2025-09-12 19:34:09,297 - INFO - Request data: {'country': 'Россия', 'crop': 'Пшеница', 'temperature': -2.79, 'precipitation': 495.1}
+2025-09-12 19:34:09,354 - INFO - Prediction completed: {"timestamp": "2025-09-12T19:34:09.353550", "request": {"country": "Россия", "crop": "Пшеница", "temperature": -2.79, "precipitation": 495.1}, "result": {"predictedYield": 2806.103515625}}
+2025-09-12 19:50:48,580 - INFO - New prediction request received at 2025-09-12 19:50:48.580937
+2025-09-12 19:50:48,580 - INFO - Request data: {'country': 'Украина', 'crop': 'Кукуруза', 'temperature': 10.44, 'precipitation': 553.94}
+2025-09-12 19:50:48,637 - INFO - Prediction completed: {"timestamp": "2025-09-12T19:50:48.637997", "request": {"country": "Украина", "crop": "Кукуруза", "temperature": 10.44, "precipitation": 553.94}, "result": {"predictedYield": 4327.20068359375}}
